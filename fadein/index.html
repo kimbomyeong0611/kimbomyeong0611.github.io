@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="http://code.jquery.com/jquery-3.3.1.js">
+    </script>
+    <script>
+      $(document).ready(function(){
+        $("#s1").click(function)(){
+          $("#big1").fadeIn(1000);
+        });
+        $("#big1").click(function)(){
+          $("#big1").fadeOut(1000);
+      });
+      });
+    </script>
+
+    <style>
+      #gallery{
+        width : 950px;
+        height : 190px;
+        background : #ff0;
+        border : 2px solid black;
+        border-redius:15px;
+      }
+
+      .bigPic {
+        position:absolute;
+        display:none;
+        left:100px;
+        width:400px;
+        height:340px;
+      }
+      .smallpic{
+        border : 2px dotted red;
+        width:200px;
+        height:140px;
+      }
+    </style>
+
+
+  </head>
+  <body>
+    <h1>사용법</h1>
+    <ol>
+      <li>작은이미지를 클릭하면 큰이미지가 나타납니다</li>
+        <li>큰이미지를 클릭하면 큰이미지가 사라집니다</li>
+    </ol>
+    <div id="gallery">
+
+          <img src="dog2.jpeg" width ="200" height="150"><br>
+          <img src="dog3.jpeg" id = "s1" width ="200" height="150">
+          <img src="dog3.jpeg" id = "big1" class = "Bigimg" width ="400" height="300">
+
+    </div>
+  </body>
+</html>
